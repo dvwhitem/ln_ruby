@@ -1,3 +1,4 @@
-last_name = "Bond"
-puts "My name is " +  last_name
-puts "James " + last_name
+last_name = "Pupkin"
+first_name = "Vasya"
+full_name = last_name + first_name
+puts full_name
