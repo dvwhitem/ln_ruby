@@ -1,5 +1,7 @@
 class Item
-  def initialize 
+  def initialize(options)
+    @price = options[:price]
+    @weight = options[:weight] 
   end
 
   attr_reader :price, :weight
@@ -7,9 +9,6 @@ class Item
   #attr_accessor :price, :weight
 end
 
-param = Item.new
-param.price = 120
-p param.price
-
-#param.weight = 450
-p param.weight
+param = Item.new({:weight => 100, :price => 230})
+puts param.price
+puts param.weight
